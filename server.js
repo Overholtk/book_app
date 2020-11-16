@@ -3,7 +3,7 @@
 const express = require('express');
 const app = express();
 const superagent = require('superagent');
-// require('dotenv').config();
+require('dotenv').config();
 require('ejs');
 const PORT = process.env.PORT || 3001;
 
@@ -13,18 +13,17 @@ app.use(express.urlencoded({ extended: true}));
 
 app.set('view engine', 'ejs');
 
-app.get('/hello', getHello);
-// app.get('/', renderHomePage);
-// app.get('/searches/new', showForm);
+app.get('/', renderHomePage);
+app.get('/searches/new', showForm);
 // app.post('/searches', createSearch);
 
-function getHello(req, res) {
-  res.render('./pages/index.ejs');
-  
+function renderHomePage(req, res) {
+  res.render('pages/index');
 }
 
-
-
+function showForm(req, res) {
+  res.render('pages/searches/new.ejs');
+}
 
 
 app.listen(PORT, () => {
