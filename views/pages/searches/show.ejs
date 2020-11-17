@@ -2,20 +2,48 @@
 <html>
 
 <head>
+  <link href="../styles/reset.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link href="../styles/search.css" rel="stylesheet">
   <title>Results</title>
 </head>
 
 <body>
+  <header>
+    <h1>Best Books!</h1>
+    <img src="https://www.freeiconspng.com/uploads/book-icon--icon-search-engine-6.png">
+  </header>
   <main>
+    <h2>Search Results</h2>
+    <% let parsedData = JSON.parse(searchResults); %>
+    <% parsedData.forEach(book =>{ %>
+
     <ul>
+      <!-- <li><img class="book-icon" src="<%= book.image %>"" /></li> -->
+        <li id=book-title><%= book.title %></li>
+        <li id=" author-name"><%= book.author %></li>
+      <li><%= book.description %></li>
+    </ul>
+    <% }); %>
+
+  </main>
+  <footer>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </footer>
+</body>
+
+</html>
+
+<!-- <ul>
       <% book.forEach(function(books){ %>
         <section class="book">
           <li><%=book.title%></li>
           <li><%=book.author%></li>
         </section>
       })
-    </ul>
-    <!-- <%= searchResults %> -->
-  </main>
-</body>
-</html>
+    </ul> -->
+<!-- <%= searchResults %> -->

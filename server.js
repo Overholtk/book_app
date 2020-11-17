@@ -16,6 +16,7 @@ app.get('/', renderHomePage);
 app.get('/searches/new', showForm);
 // app.get('/searches', (req, res) => res.render('pages/searches/new', {searchResults: []}));
 app.post('/searches', createSearch);
+app.get('/pages/error', renderError);
 
 function renderHomePage(req, res) {
   res.render('pages/index');
@@ -53,8 +54,9 @@ function createSearch(req, res) {
 }
 
 function Book(info) {
-  this.title = info.title || 'no title available';
-  this.author = info.author || 'no author available';
+  this.title = info.title || 'No title available';
+  this.author = info.author || 'No author available';
+  this.description = info.description || "No Description Provided";
 }
 
 
