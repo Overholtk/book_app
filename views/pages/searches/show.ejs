@@ -7,7 +7,15 @@
 
 <body>
   <main>
-    <%= searchResults %>
+    <ul>
+      <% book.forEach(function(books){ %>
+        <section class="book">
+          <li><%=book.title%></li>
+          <li><%=book.author%></li>
+        </section>
+      })
+    </ul>
+    <!-- <%= searchResults %> -->
   </main>
 </body>
 </html>
