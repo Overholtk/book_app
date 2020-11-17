@@ -21,3 +21,67 @@ We will be creating a full-stack application for a book list, that allows users 
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 -->
+
+Number and name of feature: Feature 1
+
+Estimate of time needed to complete: 1.5 hour
+
+Start time: 2:05
+
+Finish time: 3:00
+
+Actual time needed to complete: 1 hour
+
+Number and name of feature: Feature 2
+
+Estimate of time needed to complete: 1.5 hour
+
+Start time: 3:05
+
+Finish time: 4:30
+
+Actual time needed to complete: around 1.5 hour
+
+Number and name of feature: Feature 3
+
+Estimate of time needed to complete: 1.5 hour
+
+Start time: 4:35
+
+Finish time: 5:35
+
+Actual time needed to complete: 1 hour
+
+
+Number and name of feature: Feature 4
+
+Estimate of time needed to complete: 1.5 hour
+
+Start time: 5:40
+
+Finish time: 
+
+Actual time needed to complete: 
+
+
+Number and name of feature: Feature 5
+
+Estimate of time needed to complete: 1.5 hour
+
+Start time: 4:35
+
+Finish time: 5:35
+
+Actual time needed to complete: 1 hour
+
+
+Number and name of feature: Feature 6
+
+Estimate of time needed to complete: 1.5 hour
+
+Start time: 4:35
+
+Finish time: 5:35
+
+Actual time needed to complete: 1 hour
+
